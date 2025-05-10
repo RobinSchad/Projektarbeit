@@ -48,7 +48,7 @@ static unsigned char *load_data(FILE *fp, size_t ofst, size_t sz)
   ret = fseek(fp, ofst, SEEK_SET);
   if (ret != 0)
   {
-    printf("blob seek failure1.\n");
+    printf("blob seek failure.\n");
     return NULL;
   }
 
