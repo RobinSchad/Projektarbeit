@@ -67,6 +67,7 @@ add_executable(rknn_opi_hdmi_track
   src/hdmi_out.cpp
   src/preprocess.cc
   src/postprocess.cc
+  src/serial_utils.cpp
 )
 
 target_link_libraries(rknn_opi_hdmi_track 
