@@ -1,0 +1,1505 @@
+post process config: box_conf_threshold = 0.25, nms_threshold = 0.45
+Loading mode...
+sdk version: 1.6.0 (9a7b5d24c@2023-12-13T17:31:11) driver version: 0.8.2
+model input num: 1, output num: 3
+  index=0, name=images, n_dims=4, dims=[1, 640, 640, 3], n_elems=1228800, size=1228800, w_stride = 640, size_with_stride=1228800, fmt=NHWC, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003922
+  index=0, name=output, n_dims=4, dims=[1, 255, 80, 80], n_elems=1632000, size=1632000, w_stride = 0, size_with_stride=1638400, fmt=NCHW, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003860
+  index=1, name=283, n_dims=4, dims=[1, 255, 40, 40], n_elems=408000, size=408000, w_stride = 0, size_with_stride=491520, fmt=NCHW, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003922
+  index=2, name=285, n_dims=4, dims=[1, 255, 20, 20], n_elems=102000, size=102000, w_stride = 0, size_with_stride=163840, fmt=NCHW, type=INT8, qnt_type=AFFINE, zp=-128, scale=0.003915
+model is NHWC input fmt
+model input height=640, width=640, channel=3
+[ WARN:0] global ../modules/videoio/src/cap_gstreamer.cpp (961) open OpenCV | GStreamer warning: Cannot query video position: status=0, value=-1, duration=-1
+resize image by rga
+rga_api version 1.10.0_[2]
+resize once run use 315.674000 ms
+img width = 2592, img height = 1944
+krnn_run(.) once run use 45.773000 ms
+loadLabelName ./model/coco_80_labels_list.txt
+start process
+start process2
+start process3
+process finished validCount 60
+tv @ (0 643 311 1105) 0.843859
+person @ (1117 555 1539 1290) 0.677665
+chair @ (878 1002 1101 1169) 0.362004
+bench @ (4 1710 591 1943) 0.280815
+dining table @ (1660 1102 2587 1931) 0.211425
+Start HDMI out
+Start HDMI out init finish
+postprocess once run use 58.702000 ms
+read and colerconvert while once run use 1.747000 ms
+letterbox while once run use 8.328000 ms
+start process
+start process2
+start process3
+process finished validCount 96
+post process while once run use 27.547000 ms
+tv @ (0 643 311 1105) 0.805848
+chair @ (1113 724 1494 1308) 0.429379
+bench @ (0 1705 595 1944) 0.388897
+bench @ (1688 1085 2583 1903) 0.367181
+chair @ (874 814 1109 1174) 0.341038
+person @ (1425 28 1854 1551) 0.309366
+person @ (1186 514 1611 1518) 0.289395
+bench @ (1717 494 2587 1539) 0.180479
+while once run use 63.722000 ms
+read and colerconvert while once run use 2.151000 ms
+letterbox while once run use 8.264000 ms
+start process
+start process2
+start process3
+process finished validCount 85
+post process while once run use 26.504000 ms
+tv @ (0 639 311 1109) 0.828655
+chair @ (1113 729 1502 1494) 0.649647
+person @ (1186 546 1526 1219) 0.469935
+bench @ (12 1705 595 1944) 0.335502
+person @ (1417 68 1814 1575) 0.326655
+chair @ (866 814 1109 1166) 0.303852
+chair @ (1927 639 2583 1494) 0.268902
+handbag @ (1494 1526 1871 1867) 0.206075
+while once run use 61.197000 ms
+read and colerconvert while once run use 1.843000 ms
+letterbox while once run use 7.623000 ms
+start process
+start process2
+start process3
+process finished validCount 92
+post process while once run use 26.143000 ms
+tv @ (0 639 315 1121) 0.829099
+chair @ (1117 684 1522 1502) 0.776358
+bench @ (4 1709 587 1939) 0.608401
+chair @ (870 818 1113 1170) 0.439154
+person @ (1263 567 1539 1190) 0.272388
+handbag @ (1498 1534 1875 1863) 0.232572
+person @ (1417 0 1919 1587) 0.185307
+while once run use 60.693000 ms
+read and colerconvert while once run use 1.882000 ms
+letterbox while once run use 7.786000 ms
+start process
+start process2
+start process3
+process finished validCount 86
+post process while once run use 25.994000 ms
+tv @ (0 635 315 1125) 0.774748
+chair @ (1113 684 1510 1514) 0.721318
+chair @ (866 818 1113 1170) 0.528474
+bench @ (8 1713 595 1939) 0.492226
+person @ (1279 595 1526 1085) 0.346887
+chair @ (1915 550 2583 1502) 0.298085
+person @ (1364 0 2004 1599) 0.193568
+while once run use 70.813000 ms
+read and colerconvert while once run use 1.862000 ms
+letterbox while once run use 13.081000 ms
+start process
+start process2
+start process3
+process finished validCount 84
+post process while once run use 31.537000 ms
+tv @ (0 639 315 1105) 0.801464
+chair @ (1109 672 1522 1514) 0.695614
+bench @ (0 1705 591 1944) 0.414879
+person @ (1255 603 1534 1206) 0.354290
+surfboard @ (1478 0 1834 1567) 0.278359
+chair @ (866 810 1117 1166) 0.247982
+chair @ (1923 542 2579 1494) 0.224024
+bench @ (1684 1134 2592 1923) 0.144567
+while once run use 69.149000 ms
+read and colerconvert while once run use 1.817000 ms
+letterbox while once run use 7.401000 ms
+start process
+start process2
+start process3
+process finished validCount 74
+post process while once run use 25.230000 ms
+tv @ (0 639 311 1113) 0.812913
+chair @ (1109 668 1510 1510) 0.663610
+bench @ (0 1709 591 1939) 0.534616
+surfboard @ (1466 0 1814 1587) 0.454270
+person @ (1267 558 1534 1223) 0.379304
+bench @ (1680 1125 2587 1919) 0.245237
+handbag @ (1498 1526 1875 1867) 0.212257
+dining table @ (874 814 1101 1170) 0.157411
+while once run use 55.103000 ms
+read and colerconvert while once run use 1.852000 ms
+letterbox while once run use 7.856000 ms
+start process
+start process2
+start process3
+process finished validCount 88
+post process while once run use 26.068000 ms
+tv @ (0 635 315 1113) 0.798245
+chair @ (1109 656 1486 1486) 0.660483
+bench @ (12 1705 599 1939) 0.503806
+person @ (1271 562 1539 1190) 0.499057
+tv @ (741 210 1417 858) 0.375519
+dining table @ (866 810 1109 1174) 0.303848
+chair @ (1705 267 2519 1526) 0.263016
+person @ (1470 0 1867 1583) 0.141624
+while once run use 63.184000 ms
+read and colerconvert while once run use 1.961000 ms
+letterbox while once run use 8.455000 ms
+start process
+start process2
+start process3
+process finished validCount 80
+post process while once run use 26.734000 ms
+tv @ (0 639 311 1121) 0.817251
+chair @ (1109 656 1510 1514) 0.633446
+person @ (1267 550 1534 1178) 0.478518
+bench @ (4 1709 587 1939) 0.435295
+tv @ (757 218 1401 846) 0.343485
+chair @ (870 805 1109 1174) 0.254302
+chair @ (1660 733 2587 1899) 0.228622
+person @ (1470 0 1854 1571) 0.189261
+while once run use 63.438000 ms
+read and colerconvert while once run use 1.921000 ms
+letterbox while once run use 8.718000 ms
+start process
+start process2
+start process3
+process finished validCount 85
+post process while once run use 26.937000 ms
+tv @ (0 635 315 1113) 0.840457
+chair @ (1105 656 1482 1486) 0.706833
+person @ (1267 562 1534 1178) 0.538172
+chair @ (866 810 1101 1162) 0.421007
+bench @ (4 1705 603 1939) 0.405998
+person @ (1453 0 1838 1583) 0.156614
+bench @ (1664 919 2587 1915) 0.107291
+while once run use 66.436000 ms
+read and colerconvert while once run use 1.879000 ms
+letterbox while once run use 7.673000 ms
+start process
+start process2
+start process3
+process finished validCount 91
+post process while once run use 25.418000 ms
+tv @ (0 639 315 1113) 0.840457
+chair @ (1101 660 1502 1490) 0.683658
+person @ (1259 558 1534 1186) 0.528853
+bench @ (4 1705 591 1935) 0.349650
+chair @ (866 801 1117 1170) 0.303683
+person @ (1437 0 1834 1567) 0.220713
+chair @ (1660 943 2587 1903) 0.145303
+while once run use 56.310000 ms
+read and colerconvert while once run use 1.690000 ms
+letterbox while once run use 7.227000 ms
+start process
+start process2
+start process3
+process finished validCount 95
+post process while once run use 27.647000 ms
+tv @ (0 639 315 1093) 0.859386
+chair @ (1101 652 1486 1494) 0.760908
+person @ (1235 554 1534 1219) 0.433333
+bench @ (4 1705 603 1939) 0.423837
+chair @ (870 805 1113 1170) 0.382253
+handbag @ (1494 1534 1871 1858) 0.284983
+person @ (1441 0 1842 1587) 0.230247
+chair @ (1676 757 2583 1891) 0.170133
+while once run use 58.471000 ms
+read and colerconvert while once run use 1.692000 ms
+letterbox while once run use 7.654000 ms
+start process
+start process2
+start process3
+process finished validCount 83
+post process while once run use 27.889000 ms
+tv @ (0 639 315 1085) 0.790643
+chair @ (1101 652 1490 1494) 0.701223
+chair @ (870 814 1105 1178) 0.614548
+person @ (1247 554 1534 1194) 0.491393
+bench @ (12 1705 595 1939) 0.394049
+chair @ (1676 708 2583 1891) 0.243857
+person @ (1433 0 1818 1603) 0.187008
+while once run use 70.109000 ms
+read and colerconvert while once run use 1.922000 ms
+letterbox while once run use 8.301000 ms
+start process
+start process2
+start process3
+process finished validCount 83
+post process while once run use 29.554000 ms
+tv @ (0 639 319 1093) 0.824853
+chair @ (1101 652 1478 1494) 0.741596
+person @ (1259 546 1539 1206) 0.505709
+chair @ (874 810 1105 1174) 0.500145
+bench @ (16 1709 595 1939) 0.360369
+person @ (1453 0 1810 1579) 0.341124
+chair @ (1680 992 2587 1903) 0.216804
+while once run use 69.211000 ms
+read and colerconvert while once run use 2.492000 ms
+letterbox while once run use 8.619000 ms
+start process
+start process2
+start process3
+process finished validCount 94
+post process while once run use 28.932000 ms
+tv @ (0 643 315 1101) 0.813450
+chair @ (1105 652 1490 1494) 0.745458
+person @ (1259 554 1539 1182) 0.496405
+chair @ (870 805 1105 1170) 0.444338
+person @ (1441 0 1838 1583) 0.348374
+bench @ (12 1709 599 1939) 0.314295
+chair @ (1729 255 2543 1530) 0.261821
+while once run use 70.151000 ms
+read and colerconvert while once run use 1.741000 ms
+letterbox while once run use 8.227000 ms
+start process
+start process2
+start process3
+process finished validCount 80
+post process while once run use 28.586000 ms
+tv @ (0 643 315 1101) 0.794444
+chair @ (1105 648 1506 1494) 0.696334
+person @ (1247 550 1534 1190) 0.457244
+chair @ (874 810 1105 1174) 0.400226
+bench @ (20 1705 595 1939) 0.290796
+person @ (1437 0 1867 1571) 0.246662
+chair @ (1818 498 2535 1530) 0.207225
+while once run use 62.238000 ms
+read and colerconvert while once run use 1.784000 ms
+letterbox while once run use 8.284000 ms
+start process
+start process2
+start process3
+process finished validCount 78
+post process while once run use 27.332000 ms
+tv @ (0 643 315 1097) 0.790643
+chair @ (1109 648 1510 1494) 0.700181
+person @ (1247 554 1534 1194) 0.438391
+bench @ (0 1705 595 1935) 0.421424
+chair @ (870 810 1109 1170) 0.360927
+chair @ (1676 648 2583 1891) 0.280581
+person @ (1437 0 1814 1579) 0.267798
+while once run use 64.679000 ms
+read and colerconvert while once run use 1.761000 ms
+letterbox while once run use 8.582000 ms
+start process
+start process2
+start process3
+process finished validCount 74
+post process while once run use 28.934000 ms
+tv @ (0 639 315 1105) 0.778565
+chair @ (1105 648 1490 1494) 0.768633
+person @ (1243 550 1530 1235) 0.439265
+chair @ (866 805 1113 1170) 0.315756
+bench @ (8 1701 587 1935) 0.311021
+person @ (1453 0 1810 1567) 0.263691
+while once run use 60.404000 ms
+read and colerconvert while once run use 2.015000 ms
+letterbox while once run use 8.038000 ms
+start process
+start process2
+start process3
+process finished validCount 91
+post process while once run use 27.183000 ms
+tv @ (0 643 315 1105) 0.848028
+chair @ (1101 648 1498 1494) 0.693560
+person @ (1255 550 1534 1190) 0.437977
+bench @ (0 1705 595 1939) 0.412825
+chair @ (870 814 1109 1166) 0.387351
+person @ (1441 0 1822 1607) 0.308462
+handbag @ (1498 1534 1875 1879) 0.217286
+while once run use 65.979000 ms
+read and colerconvert while once run use 1.735000 ms
+letterbox while once run use 7.539000 ms
+start process
+start process2
+start process3
+process finished validCount 65
+post process while once run use 27.755000 ms
+tv @ (0 643 315 1109) 0.836671
+chair @ (1101 652 1506 1494) 0.682064
+person @ (1255 546 1534 1198) 0.457244
+bench @ (0 1701 595 1939) 0.333690
+chair @ (870 810 1109 1166) 0.246797
+person @ (1445 0 1834 1587) 0.223901
+while once run use 60.765000 ms
+read and colerconvert while once run use 1.776000 ms
+letterbox while once run use 7.615000 ms
+start process
+start process2
+start process3
+process finished validCount 82
+post process while once run use 25.294000 ms
+tv @ (0 639 315 1089) 0.821052
+chair @ (1105 648 1490 1494) 0.711723
+person @ (1251 550 1530 1190) 0.477353
+chair @ (870 814 1105 1166) 0.403445
+bench @ (0 1705 591 1939) 0.390141
+person @ (1441 0 1806 1599) 0.314746
+while once run use 57.725000 ms
+read and colerconvert while once run use 1.888000 ms
+letterbox while once run use 7.581000 ms
+start process
+start process2
+start process3
+process finished validCount 84
+post process while once run use 27.859000 ms
+tv @ (0 639 315 1097) 0.813450
+chair @ (1101 648 1514 1494) 0.741596
+chair @ (866 810 1105 1174) 0.467942
+person @ (1263 546 1522 1077) 0.467360
+bench @ (0 1705 591 1935) 0.408227
+person @ (1441 0 1814 1587) 0.288398
+while once run use 67.872000 ms
+read and colerconvert while once run use 1.742000 ms
+letterbox while once run use 7.176000 ms
+start process
+start process2
+start process3
+process finished validCount 98
+post process while once run use 26.208000 ms
+chair @ (1101 652 1490 1482) 0.783316
+tv @ (0 643 315 1097) 0.767115
+person @ (1267 554 1534 1206) 0.503547
+bench @ (4 1705 591 1939) 0.474104
+chair @ (870 810 1105 1174) 0.429685
+handbag @ (1498 1530 1875 1863) 0.315217
+person @ (1445 0 1818 1599) 0.294652
+while once run use 60.136000 ms
+read and colerconvert while once run use 1.740000 ms
+letterbox while once run use 7.565000 ms
+start process
+start process2
+start process3
+process finished validCount 77
+post process while once run use 26.569000 ms
+tv @ (0 639 315 1105) 0.836671
+chair @ (1093 648 1494 1502) 0.715524
+bench @ (4 1701 591 1935) 0.398142
+person @ (1377 469 1794 1526) 0.346021
+chair @ (870 810 1105 1174) 0.324448
+while once run use 62.510000 ms
+read and colerconvert while once run use 1.757000 ms
+letterbox while once run use 7.687000 ms
+start process
+start process2
+start process3
+process finished validCount 66
+post process while once run use 27.392000 ms
+tv @ (0 643 315 1105) 0.836671
+person @ (1089 546 1583 1526) 0.560059
+bench @ (0 1705 595 1939) 0.491071
+chair @ (870 810 1093 1166) 0.345667
+chair @ (1036 656 1377 1219) 0.260073
+while once run use 59.232000 ms
+read and colerconvert while once run use 2.019000 ms
+letterbox while once run use 7.556000 ms
+start process
+start process2
+start process3
+process finished validCount 73
+post process while once run use 28.554000 ms
+tv @ (0 643 315 1093) 0.832456
+person @ (1065 550 1615 1526) 0.531428
+bench @ (0 1709 591 1935) 0.380577
+chair @ (874 810 1097 1170) 0.336701
+chair @ (1660 648 2579 1891) 0.282421
+while once run use 62.833000 ms
+read and colerconvert while once run use 2.084000 ms
+letterbox while once run use 7.927000 ms
+start process
+start process2
+start process3
+process finished validCount 74
+post process while once run use 29.010000 ms
+tv @ (0 639 315 1105) 0.832885
+bench @ (0 1709 595 1939) 0.474104
+person @ (1077 546 1599 1526) 0.473797
+chair @ (870 818 1097 1170) 0.312171
+chair @ (1705 486 2563 1547) 0.302561
+while once run use 68.795000 ms
+read and colerconvert while once run use 1.750000 ms
+letterbox while once run use 8.221000 ms
+start process
+start process2
+start process3
+process finished validCount 65
+post process while once run use 28.975000 ms
+tv @ (0 643 315 1097) 0.813450
+chair @ (1077 554 1595 1534) 0.534999
+bench @ (0 1701 595 1939) 0.318654
+chair @ (870 810 1097 1170) 0.302653
+chair @ (1660 635 2575 1895) 0.244624
+while once run use 68.403000 ms
+read and colerconvert while once run use 1.767000 ms
+letterbox while once run use 8.105000 ms
+start process
+start process2
+start process3
+process finished validCount 56
+post process while once run use 28.880000 ms
+tv @ (0 639 319 1109) 0.840457
+person @ (1073 546 1620 1522) 0.517051
+bench @ (0 1705 595 1939) 0.397651
+chair @ (866 810 1097 1174) 0.253072
+while once run use 69.513000 ms
+read and colerconvert while once run use 1.785000 ms
+letterbox while once run use 8.631000 ms
+start process
+start process2
+start process3
+process finished validCount 65
+post process while once run use 29.512000 ms
+tv @ (0 639 315 1105) 0.848028
+chair @ (1085 591 1620 1518) 0.540747
+chair @ (1701 481 2571 1543) 0.282129
+chair @ (870 814 1097 1174) 0.276167
+bench @ (0 1709 595 1935) 0.276167
+while once run use 64.723000 ms
+read and colerconvert while once run use 1.772000 ms
+letterbox while once run use 7.432000 ms
+start process
+start process2
+start process3
+process finished validCount 57
+post process while once run use 28.224000 ms
+tv @ (0 635 319 1113) 0.859386
+person @ (1069 546 1591 1526) 0.528424
+bench @ (0 1705 591 1939) 0.455941
+chair @ (870 814 1097 1174) 0.224575
+while once run use 65.580000 ms
+read and colerconvert while once run use 1.742000 ms
+letterbox while once run use 7.294000 ms
+start process
+start process2
+start process3
+process finished validCount 54
+post process while once run use 28.195000 ms
+tv @ (0 639 311 1101) 0.821052
+person @ (1077 550 1599 1530) 0.544057
+bench @ (0 1709 595 1939) 0.383244
+while once run use 62.888000 ms
+read and colerconvert while once run use 1.744000 ms
+letterbox while once run use 7.038000 ms
+start process
+start process2
+start process3
+process finished validCount 60
+post process while once run use 24.650000 ms
+tv @ (0 639 315 1097) 0.832885
+chair @ (1073 542 1620 1522) 0.556917
+bench @ (0 1705 595 1939) 0.516468
+chair @ (1656 558 2575 1769) 0.351485
+while once run use 65.140000 ms
+read and colerconvert while once run use 1.742000 ms
+letterbox while once run use 7.158000 ms
+start process
+start process2
+start process3
+process finished validCount 49
+post process while once run use 28.189000 ms
+tv @ (0 635 315 1097) 0.855263
+chair @ (1077 550 1583 1530) 0.541712
+chair @ (870 814 1097 1174) 0.256334
+bench @ (0 1705 591 1935) 0.219242
+while once run use 67.581000 ms
+read and colerconvert while once run use 2.138000 ms
+letterbox while once run use 7.497000 ms
+start process
+start process2
+start process3
+process finished validCount 49
+post process while once run use 28.193000 ms
+tv @ (0 643 315 1101) 0.832885
+chair @ (1061 554 1579 1530) 0.559017
+bench @ (0 1701 587 1939) 0.287969
+while once run use 66.454000 ms
+read and colerconvert while once run use 2.178000 ms
+letterbox while once run use 8.067000 ms
+start process
+start process2
+start process3
+process finished validCount 64
+post process while once run use 29.047000 ms
+tv @ (0 639 311 1105) 0.701223
+bench @ (0 1705 595 1939) 0.411354
+chair @ (1036 558 1587 1522) 0.387351
+chair @ (866 818 1093 1170) 0.379810
+while once run use 66.070000 ms
+read and colerconvert while once run use 1.716000 ms
+letterbox while once run use 7.556000 ms
+start process
+start process2
+start process3
+process finished validCount 63
+post process while once run use 27.970000 ms
+tv @ (0 639 315 1093) 0.786842
+chair @ (870 814 1097 1170) 0.408748
+chair @ (1129 963 1615 1514) 0.394678
+chair @ (1040 562 1445 1486) 0.317811
+bench @ (0 1705 595 1939) 0.288306
+while once run use 63.946000 ms
+read and colerconvert while once run use 1.677000 ms
+letterbox while once run use 7.528000 ms
+start process
+start process2
+start process3
+process finished validCount 70
+post process while once run use 27.817000 ms
+tv @ (0 639 315 1097) 0.836671
+chair @ (1061 562 1571 1526) 0.443173
+bench @ (8 1705 587 1935) 0.371748
+chair @ (866 818 1097 1166) 0.367840
+chair @ (1664 457 2571 1547) 0.228561
+while once run use 60.363000 ms
+read and colerconvert while once run use 1.688000 ms
+letterbox while once run use 7.571000 ms
+start process
+start process2
+start process3
+process finished validCount 70
+post process while once run use 26.534000 ms
+tv @ (0 643 315 1093) 0.798245
+chair @ (1053 558 1522 1522) 0.414113
+chair @ (866 818 1093 1170) 0.404916
+chair @ (1696 465 2567 1559) 0.246769
+bench @ (0 1705 595 1939) 0.237956
+while once run use 53.792000 ms
+read and colerconvert while once run use 1.979000 ms
+letterbox while once run use 7.744000 ms
+start process
+start process2
+start process3
+process finished validCount 62
+post process while once run use 28.153000 ms
+tv @ (0 639 315 1105) 0.844242
+chair @ (1053 562 1587 1526) 0.597856
+chair @ (870 822 1097 1170) 0.473153
+bench @ (0 1701 595 1939) 0.240332
+while once run use 62.257000 ms
+read and colerconvert while once run use 1.672000 ms
+letterbox while once run use 7.156000 ms
+start process
+start process2
+start process3
+process finished validCount 66
+post process while once run use 25.136000 ms
+tv @ (0 639 315 1105) 0.817251
+person @ (1057 554 1603 1530) 0.409423
+chair @ (870 818 1097 1166) 0.385052
+bench @ (0 1705 595 1939) 0.285609
+while once run use 57.768000 ms
+read and colerconvert while once run use 1.713000 ms
+letterbox while once run use 7.047000 ms
+start process
+start process2
+start process3
+process finished validCount 70
+post process while once run use 24.866000 ms
+tv @ (0 639 315 1105) 0.813450
+bench @ (0 1705 591 1939) 0.460493
+chair @ (1057 571 1543 1522) 0.402234
+chair @ (866 822 1101 1170) 0.371411
+handbag @ (1502 1530 1879 1875) 0.129485
+while once run use 55.112000 ms
+read and colerconvert while once run use 1.708000 ms
+letterbox while once run use 8.020000 ms
+start process
+start process2
+start process3
+process finished validCount 68
+post process while once run use 28.578000 ms
+tv @ (0 635 315 1113) 0.817742
+chair @ (862 818 1101 1174) 0.480204
+chair @ (1069 550 1518 1526) 0.433149
+bench @ (12 1705 599 1935) 0.427159
+while once run use 59.021000 ms
+read and colerconvert while once run use 1.698000 ms
+letterbox while once run use 8.327000 ms
+start process
+start process2
+start process3
+process finished validCount 71
+post process while once run use 25.395000 ms
+tv @ (0 643 311 1093) 0.848028
+bench @ (0 1709 591 1935) 0.489247
+chair @ (1065 558 1551 1522) 0.450500
+chair @ (870 826 1097 1166) 0.344312
+chair @ (1721 473 2571 1539) 0.226154
+while once run use 53.698000 ms
+read and colerconvert while once run use 2.108000 ms
+letterbox while once run use 8.007000 ms
+start process
+start process2
+start process3
+process finished validCount 55
+post process while once run use 28.142000 ms
+tv @ (0 639 315 1097) 0.771637
+chair @ (1057 550 1603 1530) 0.640527
+bench @ (0 1701 595 1939) 0.374722
+chair @ (870 814 1097 1170) 0.252734
+chair @ (1822 490 2571 1526) 0.248915
+while once run use 68.647000 ms
+read and colerconvert while once run use 1.753000 ms
+letterbox while once run use 7.526000 ms
+start process
+start process2
+start process3
+process finished validCount 71
+post process while once run use 27.778000 ms
+tv @ (0 639 315 1097) 0.848028
+chair @ (1057 546 1579 1526) 0.538846
+bench @ (8 1705 603 1939) 0.435986
+chair @ (866 822 1093 1170) 0.421271
+while once run use 60.147000 ms
+read and colerconvert while once run use 1.946000 ms
+letterbox while once run use 7.779000 ms
+start process
+start process2
+start process3
+process finished validCount 47
+post process while once run use 26.222000 ms
+tv @ (0 643 315 1105) 0.767836
+chair @ (1065 554 1599 1534) 0.637799
+bench @ (8 1701 587 1935) 0.311757
+while once run use 59.906000 ms
+read and colerconvert while once run use 1.738000 ms
+letterbox while once run use 7.378000 ms
+start process
+start process2
+start process3
+process finished validCount 64
+post process while once run use 26.338000 ms
+tv @ (0 643 315 1113) 0.809649
+chair @ (1057 542 1579 1539) 0.513280
+bench @ (0 1705 591 1939) 0.410618
+chair @ (866 810 1105 1170) 0.250704
+chair @ (1640 668 2583 1879) 0.216804
+while once run use 59.874000 ms
+read and colerconvert while once run use 2.178000 ms
+letterbox while once run use 8.182000 ms
+start process
+start process2
+start process3
+process finished validCount 53
+post process while once run use 27.215000 ms
+tv @ (0 643 311 1093) 0.829099
+chair @ (1065 546 1587 1526) 0.541482
+bench @ (8 1705 599 1939) 0.404445
+chair @ (1672 226 2555 1595) 0.259644
+while once run use 68.714000 ms
+read and colerconvert while once run use 1.731000 ms
+letterbox while once run use 7.074000 ms
+start process
+start process2
+start process3
+process finished validCount 64
+post process while once run use 24.319000 ms
+tv @ (0 639 315 1109) 0.844242
+chair @ (1057 546 1591 1526) 0.487178
+chair @ (1721 461 2571 1551) 0.293058
+bench @ (0 1701 595 1939) 0.253942
+chair @ (870 818 1101 1170) 0.249988
+chair @ (1134 996 1607 1506) 0.248517
+while once run use 55.936000 ms
+read and colerconvert while once run use 1.743000 ms
+letterbox while once run use 7.044000 ms
+start process
+start process2
+start process3
+process finished validCount 72
+post process while once run use 26.004000 ms
+tv @ (0 643 315 1101) 0.817251
+chair @ (1061 546 1563 1522) 0.495853
+bench @ (8 1705 603 1939) 0.443737
+chair @ (866 822 1101 1170) 0.408319
+chair @ (1761 469 2567 1547) 0.235703
+while once run use 57.022000 ms
+read and colerconvert while once run use 1.836000 ms
+letterbox while once run use 7.158000 ms
+start process
+start process2
+start process3
+process finished validCount 46
+post process while once run use 24.440000 ms
+tv @ (0 639 315 1101) 0.824363
+person @ (1065 550 1571 1530) 0.431616
+chair @ (1146 1016 1603 1518) 0.339668
+bench @ (0 1705 595 1939) 0.160170
+while once run use 55.560000 ms
+read and colerconvert while once run use 1.798000 ms
+letterbox while once run use 7.491000 ms
+start process
+start process2
+start process3
+process finished validCount 67
+post process while once run use 26.401000 ms
+tv @ (0 639 315 1101) 0.797647
+bench @ (0 1705 591 1939) 0.518216
+chair @ (1061 558 1563 1522) 0.488603
+chair @ (870 818 1093 1170) 0.402076
+chair @ (1142 1024 1599 1514) 0.295050
+chair @ (1709 473 2567 1551) 0.227610
+while once run use 60.963000 ms
+read and colerconvert while once run use 1.746000 ms
+letterbox while once run use 7.510000 ms
+start process
+start process2
+start process3
+process finished validCount 54
+post process while once run use 27.631000 ms
+tv @ (0 639 315 1097) 0.794444
+chair @ (1053 550 1599 1530) 0.577042
+bench @ (4 1709 591 1939) 0.501846
+chair @ (870 814 1097 1174) 0.250647
+while once run use 65.701000 ms
+read and colerconvert while once run use 1.749000 ms
+letterbox while once run use 7.583000 ms
+start process
+start process2
+start process3
+process finished validCount 55
+post process while once run use 27.530000 ms
+tv @ (0 639 311 1105) 0.817251
+chair @ (1069 554 1543 1530) 0.518905
+bench @ (4 1701 591 1935) 0.382017
+chair @ (1676 494 2571 1543) 0.240332
+while once run use 61.387000 ms
+read and colerconvert while once run use 1.756000 ms
+letterbox while once run use 7.139000 ms
+start process
+start process2
+start process3
+process finished validCount 61
+post process while once run use 27.314000 ms
+tv @ (0 639 315 1093) 0.836671
+chair @ (1048 554 1567 1530) 0.553254
+bench @ (8 1701 587 1939) 0.430390
+chair @ (870 814 1101 1158) 0.277678
+while once run use 59.656000 ms
+read and colerconvert while once run use 1.765000 ms
+letterbox while once run use 8.468000 ms
+start process
+start process2
+start process3
+process finished validCount 61
+post process while once run use 28.643000 ms
+tv @ (0 639 315 1097) 0.778565
+chair @ (1061 550 1547 1530) 0.510307
+bench @ (0 1705 595 1935) 0.399123
+chair @ (866 822 1097 1170) 0.369985
+chair @ (1660 639 2579 1899) 0.183437
+while once run use 64.891000 ms
+read and colerconvert while once run use 1.725000 ms
+letterbox while once run use 8.500000 ms
+start process
+start process2
+start process3
+process finished validCount 53
+post process while once run use 28.599000 ms
+tv @ (0 639 315 1097) 0.840058
+chair @ (1061 558 1563 1522) 0.485569
+bench @ (8 1705 587 1935) 0.388393
+chair @ (1138 1012 1607 1514) 0.295296
+while once run use 68.565000 ms
+read and colerconvert while once run use 2.000000 ms
+letterbox while once run use 8.046000 ms
+start process
+start process2
+start process3
+process finished validCount 64
+post process while once run use 26.891000 ms
+tv @ (0 639 315 1109) 0.794444
+bench @ (0 1705 591 1939) 0.483177
+chair @ (1065 558 1526 1522) 0.461290
+chair @ (866 814 1097 1170) 0.292261
+while once run use 59.340000 ms
+read and colerconvert while once run use 1.901000 ms
+letterbox while once run use 7.322000 ms
+start process
+start process2
+start process3
+process finished validCount 62
+post process while once run use 26.157000 ms
+tv @ (0 639 315 1105) 0.805848
+chair @ (1061 554 1563 1530) 0.527381
+chair @ (866 814 1101 1170) 0.325736
+bench @ (0 1705 595 1939) 0.272626
+chair @ (1129 1004 1607 1514) 0.267155
+while once run use 65.248000 ms
+read and colerconvert while once run use 1.856000 ms
+letterbox while once run use 7.287000 ms
+start process
+start process2
+start process3
+process finished validCount 72
+post process while once run use 26.185000 ms
+tv @ (0 639 315 1097) 0.844242
+chair @ (862 822 1089 1166) 0.480204
+chair @ (1117 963 1603 1526) 0.444737
+person @ (1057 554 1453 1518) 0.430007
+bench @ (0 1705 595 1935) 0.319789
+chair @ (1680 461 2575 1555) 0.236715
+while once run use 64.492000 ms
+read and colerconvert while once run use 1.763000 ms
+letterbox while once run use 7.612000 ms
+start process
+start process2
+start process3
+process finished validCount 64
+post process while once run use 25.337000 ms
+tv @ (0 643 315 1101) 0.786842
+chair @ (1057 562 1551 1526) 0.507640
+bench @ (4 1696 591 1935) 0.448476
+chair @ (866 818 1097 1166) 0.308446
+while once run use 55.843000 ms
+read and colerconvert while once run use 1.743000 ms
+letterbox while once run use 7.380000 ms
+start process
+start process2
+start process3
+process finished validCount 72
+post process while once run use 26.257000 ms
+tv @ (0 639 315 1109) 0.825313
+chair @ (1065 550 1559 1530) 0.479805
+chair @ (870 822 1097 1170) 0.439571
+bench @ (0 1705 595 1939) 0.389190
+chair @ (1138 980 1607 1510) 0.300415
+chair @ (1628 510 2583 1846) 0.225265
+while once run use 60.036000 ms
+read and colerconvert while once run use 1.731000 ms
+letterbox while once run use 9.723000 ms
+start process
+start process2
+start process3
+process finished validCount 68
+post process while once run use 30.058000 ms
+tv @ (0 639 315 1105) 0.836671
+chair @ (1061 554 1539 1530) 0.504820
+bench @ (0 1701 595 1939) 0.374522
+chair @ (866 818 1093 1166) 0.370522
+while once run use 62.401000 ms
+read and colerconvert while once run use 2.091000 ms
+letterbox while once run use 7.431000 ms
+start process
+start process2
+start process3
+process finished validCount 65
+post process while once run use 27.636000 ms
+tv @ (0 643 315 1101) 0.844242
+chair @ (1061 550 1607 1530) 0.512054
+bench @ (8 1705 599 1939) 0.372011
+chair @ (866 822 1105 1174) 0.368729
+chair @ (1154 1048 1611 1506) 0.256395
+while once run use 66.305000 ms
+read and colerconvert while once run use 1.727000 ms
+letterbox while once run use 7.506000 ms
+start process
+start process2
+start process3
+process finished validCount 56
+post process while once run use 27.637000 ms
+tv @ (0 643 315 1105) 0.840058
+chair @ (1057 554 1534 1530) 0.466409
+bench @ (0 1701 595 1939) 0.366813
+chair @ (866 818 1097 1166) 0.237113
+chair @ (1676 481 2571 1530) 0.210903
+while once run use 58.853000 ms
+read and colerconvert while once run use 1.742000 ms
+letterbox while once run use 6.957000 ms
+start process
+start process2
+start process3
+process finished validCount 64
+post process while once run use 24.278000 ms
+tv @ (0 639 315 1097) 0.829099
+chair @ (1061 558 1526 1522) 0.466624
+chair @ (866 810 1081 1162) 0.379100
+bench @ (4 1705 587 1935) 0.360988
+chair @ (1138 992 1611 1518) 0.292904
+chair @ (1652 712 2583 1867) 0.171666
+while once run use 56.529000 ms
+read and colerconvert while once run use 1.664000 ms
+letterbox while once run use 7.311000 ms
+start process
+start process2
+start process3
+process finished validCount 61
+post process while once run use 27.226000 ms
+tv @ (0 643 315 1105) 0.806384
+chair @ (1048 550 1559 1530) 0.564044
+bench @ (8 1705 603 1939) 0.349942
+chair @ (866 822 1101 1170) 0.265591
+while once run use 60.294000 ms
+read and colerconvert while once run use 2.103000 ms
+letterbox while once run use 7.981000 ms
+start process
+start process2
+start process3
+process finished validCount 63
+post process while once run use 25.919000 ms
+tv @ (0 639 315 1097) 0.832885
+chair @ (1053 558 1615 1522) 0.610884
+chair @ (870 822 1101 1170) 0.343531
+chair @ (1701 461 2571 1555) 0.279708
+bench @ (0 1701 591 1939) 0.238401
+while once run use 64.320000 ms
+read and colerconvert while once run use 1.642000 ms
+letterbox while once run use 7.013000 ms
+start process
+start process2
+start process3
+process finished validCount 62
+post process while once run use 24.236000 ms
+tv @ (0 639 315 1105) 0.832885
+chair @ (1073 554 1591 1518) 0.573241
+chair @ (870 818 1097 1170) 0.262005
+bench @ (4 1701 583 1935) 0.237512
+while once run use 63.246000 ms
+read and colerconvert while once run use 1.960000 ms
+letterbox while once run use 7.313000 ms
+start process
+start process2
+start process3
+process finished validCount 48
+post process while once run use 24.945000 ms
+tv @ (0 639 315 1097) 0.832456
+chair @ (1040 571 1563 1514) 0.603068
+bench @ (4 1701 587 1935) 0.364176
+while once run use 62.290000 ms
+read and colerconvert while once run use 2.195000 ms
+letterbox while once run use 8.010000 ms
+start process
+start process2
+start process3
+process finished validCount 61
+post process while once run use 26.882000 ms
+tv @ (0 639 315 1105) 0.813956
+person @ (1069 558 1579 1518) 0.522155
+bench @ (0 1701 595 1939) 0.374292
+chair @ (870 801 1109 1166) 0.298685
+person @ (1478 0 1777 1551) 0.279018
+while once run use 64.915000 ms
+read and colerconvert while once run use 1.759000 ms
+letterbox while once run use 7.666000 ms
+start process
+start process2
+start process3
+process finished validCount 63
+post process while once run use 27.891000 ms
+tv @ (0 643 315 1105) 0.832885
+person @ (1101 579 1551 1474) 0.533149
+bench @ (0 1709 595 1935) 0.299802
+handbag @ (1502 1522 1875 1867) 0.268927
+chair @ (1032 672 1413 1251) 0.243765
+while once run use 63.565000 ms
+read and colerconvert while once run use 1.805000 ms
+letterbox while once run use 7.742000 ms
+start process
+start process2
+start process3
+process finished validCount 77
+post process while once run use 27.990000 ms
+tv @ (0 639 315 1109) 0.817251
+person @ (1109 558 1603 1522) 0.628511
+chair @ (1044 656 1340 1243) 0.338580
+bench @ (12 1709 599 1939) 0.321338
+chair @ (874 801 1105 1170) 0.283737
+chair @ (1721 465 2559 1526) 0.253820
+while once run use 64.054000 ms
+read and colerconvert while once run use 1.995000 ms
+letterbox while once run use 7.761000 ms
+start process
+start process2
+start process3
+process finished validCount 84
+post process while once run use 28.028000 ms
+tv @ (0 639 315 1097) 0.786842
+person @ (1129 571 1607 1514) 0.616065
+chair @ (1048 688 1385 1437) 0.410796
+bench @ (0 1705 591 1939) 0.401881
+chair @ (1684 465 2567 1559) 0.304584
+chair @ (870 805 1097 1170) 0.238524
+while once run use 70.035000 ms
+read and colerconvert while once run use 1.767000 ms
+letterbox while once run use 7.124000 ms
+start process
+start process2
+start process3
+process finished validCount 72
+post process while once run use 27.324000 ms
+tv @ (0 643 315 1105) 0.851814
+chair @ (1069 635 1494 1490) 0.558036
+bench @ (0 1696 591 1939) 0.394141
+chair @ (870 801 1097 1170) 0.280277
+chair @ (1053 664 1364 1215) 0.233465
+chair @ (1664 700 2579 1883) 0.231810
+while once run use 61.008000 ms
+read and colerconvert while once run use 1.754000 ms
+letterbox while once run use 7.482000 ms
+start process
+start process2
+start process3
+process finished validCount 67
+post process while once run use 26.402000 ms
+tv @ (0 643 315 1093) 0.821052
+person @ (1105 595 1551 1502) 0.562568
+chair @ (870 805 1097 1170) 0.336701
+bench @ (0 1701 587 1935) 0.312891
+while once run use 57.788000 ms
+read and colerconvert while once run use 1.738000 ms
+letterbox while once run use 8.455000 ms
+start process
+start process2
+start process3
+process finished validCount 61
+post process while once run use 27.279000 ms
+tv @ (0 639 315 1109) 0.816730
+person @ (1125 567 1591 1526) 0.558772
+chair @ (1044 660 1259 1170) 0.318992
+chair @ (1765 409 2494 1441) 0.233465
+chair @ (870 805 1093 1170) 0.218593
+bench @ (0 1701 587 1935) 0.214184
+while once run use 55.820000 ms
+read and colerconvert while once run use 2.311000 ms
+letterbox while once run use 8.370000 ms
+start process
+start process2
+start process3
+process finished validCount 74
+post process while once run use 27.476000 ms
+tv @ (0 639 315 1109) 0.817742
+person @ (1097 607 1555 1494) 0.543960
+bench @ (0 1709 591 1939) 0.481400
+chair @ (870 805 1105 1174) 0.337270
+chair @ (1053 672 1389 1223) 0.245436
+while once run use 59.307000 ms
+read and colerconvert while once run use 1.833000 ms
+letterbox while once run use 7.572000 ms
+start process
+start process2
+start process3
+process finished validCount 54
+post process while once run use 29.932000 ms
+tv @ (0 643 315 1105) 0.825313
+person @ (1142 554 1624 1530) 0.569378
+bench @ (0 1705 595 1939) 0.338702
+chair @ (1053 664 1356 1206) 0.255935
+while once run use 69.652000 ms
+read and colerconvert while once run use 2.222000 ms
+letterbox while once run use 8.392000 ms
+start process
+start process2
+start process3
+process finished validCount 74
+post process while once run use 27.883000 ms
+tv @ (0 639 315 1101) 0.817742
+person @ (1142 550 1620 1530) 0.573976
+bench @ (16 1709 595 1935) 0.386528
+chair @ (870 810 1097 1166) 0.343253
+chair @ (1048 664 1364 1235) 0.333154
+chair @ (1684 461 2567 1539) 0.241803
+while once run use 67.262000 ms
+read and colerconvert while once run use 1.669000 ms
+letterbox while once run use 8.143000 ms
+start process
+start process2
+start process3
+process finished validCount 66
+post process while once run use 25.605000 ms
+tv @ (0 643 315 1097) 0.770932
+person @ (1142 546 1624 1543) 0.569378
+chair @ (1048 672 1364 1190) 0.322946
+bench @ (0 1713 591 1939) 0.280673
+chair @ (1749 469 2563 1530) 0.243888
+while once run use 61.505000 ms
+read and colerconvert while once run use 1.834000 ms
+letterbox while once run use 5.634000 ms
+start process
+start process2
+start process3
+process finished validCount 69
+post process while once run use 23.862000 ms
+tv @ (0 639 315 1097) 0.813450
+chair @ (1105 579 1591 1530) 0.479683
+chair @ (870 810 1097 1166) 0.370627
+bench @ (4 1701 583 1935) 0.323712
+chair @ (1040 656 1368 1231) 0.297901
+chair @ (1652 510 2583 1802) 0.220790
+handbag @ (1502 1526 1875 1875) 0.151985
+while once run use 55.810000 ms
+read and colerconvert while once run use 1.970000 ms
+letterbox while once run use 7.837000 ms
+start process
+start process2
+start process3
+process finished validCount 66
+post process while once run use 25.562000 ms
+tv @ (0 639 315 1105) 0.790643
+person @ (1101 567 1571 1526) 0.630650
+chair @ (870 805 1097 1166) 0.329412
+bench @ (0 1701 595 1939) 0.313596
+chair @ (1040 660 1332 1210) 0.261790
+while once run use 63.699000 ms
+read and colerconvert while once run use 1.725000 ms
+letterbox while once run use 7.246000 ms
+start process
+start process2
+start process3
+process finished validCount 77
+post process while once run use 24.992000 ms
+tv @ (0 639 315 1109) 0.813450
+chair @ (1077 635 1474 1502) 0.774028
+bench @ (0 1705 591 1939) 0.400471
+chair @ (870 805 1097 1166) 0.356263
+person @ (1227 554 1539 1348) 0.347899
+person @ (1474 0 1794 1603) 0.187683
+while once run use 51.966000 ms
+read and colerconvert while once run use 1.795000 ms
+letterbox while once run use 7.303000 ms
+start process
+start process2
+start process3
+process finished validCount 73
+post process while once run use 24.500000 ms
+tv @ (0 643 315 1089) 0.798245
+chair @ (1077 635 1506 1490) 0.719310
+chair @ (866 810 1101 1166) 0.566497
+person @ (1425 8 1818 1551) 0.358107
+bench @ (0 1709 595 1939) 0.257498
+while once run use 61.402000 ms
+read and colerconvert while once run use 2.046000 ms
+letterbox while once run use 7.616000 ms
+start process
+start process2
+start process3
+process finished validCount 79
+post process while once run use 26.594000 ms
+tv @ (0 639 315 1105) 0.802046
+chair @ (1073 639 1510 1494) 0.759483
+chair @ (866 810 1101 1170) 0.595925
+bench @ (8 1705 603 1939) 0.382007
+chair @ (1777 486 2571 1518) 0.237266
+person @ (1421 0 1802 1575) 0.220437
+while once run use 59.703000 ms
+read and colerconvert while once run use 1.783000 ms
+letterbox while once run use 7.690000 ms
+start process
+start process2
+start process3
+process finished validCount 85
+post process while once run use 28.136000 ms
+tv @ (0 643 315 1105) 0.840457
+chair @ (1069 639 1478 1494) 0.784818
+person @ (1239 579 1534 1219) 0.394892
+chair @ (866 810 1101 1162) 0.367489
+bench @ (0 1701 587 1935) 0.239106
+handbag @ (1498 1539 1871 1867) 0.217286
+person @ (1433 52 1810 1559) 0.206428
+while once run use 68.895000 ms
+read and colerconvert while once run use 2.120000 ms
+letterbox while once run use 7.548000 ms
+start process
+start process2
+start process3
+process finished validCount 78
+post process while once run use 26.384000 ms
+tv @ (0 643 315 1097) 0.832456
+chair @ (1073 631 1498 1502) 0.736584
+chair @ (866 810 1105 1166) 0.573578
+bench @ (0 1705 595 1939) 0.340082
+person @ (1219 575 1530 1251) 0.281746
+person @ (1425 0 1814 1587) 0.219609
+while once run use 68.040000 ms
+read and colerconvert while once run use 1.800000 ms
+letterbox while once run use 7.550000 ms
+start process
+start process2
+start process3
+process finished validCount 92
+post process while once run use 26.624000 ms
+tv @ (0 639 311 1097) 0.832885
+chair @ (1073 643 1474 1498) 0.784083
+chair @ (866 810 1101 1166) 0.569102
+person @ (1231 562 1539 1239) 0.391152
+bench @ (0 1705 591 1939) 0.374522
+person @ (1421 0 1826 1571) 0.346765
+handbag @ (1498 1534 1875 1867) 0.224775
+while once run use 68.867000 ms
+read and colerconvert while once run use 1.715000 ms
+letterbox while once run use 7.989000 ms
+start process
+start process2
+start process3
+process finished validCount 78
+post process while once run use 28.426000 ms
+tv @ (0 643 315 1097) 0.817251
+chair @ (1069 635 1482 1494) 0.739542
+chair @ (866 814 1101 1166) 0.444060
+bench @ (12 1705 599 1939) 0.327197
+person @ (1429 8 1814 1567) 0.258725
+person @ (1231 583 1534 1174) 0.248904
+chair @ (1725 457 2563 1530) 0.230139
+while once run use 71.094000 ms
+read and colerconvert while once run use 1.724000 ms
+letterbox while once run use 7.487000 ms
+start process
+start process2
+start process3
+process finished validCount 73
+post process while once run use 27.735000 ms
+tv @ (0 643 315 1097) 0.763299
+chair @ (1077 627 1514 1498) 0.688011
+chair @ (870 810 1097 1162) 0.484388
+bench @ (0 1705 595 1939) 0.347623
+person @ (1425 0 1814 1567) 0.285394
+while once run use 71.931000 ms
+read and colerconvert while once run use 1.821000 ms
+letterbox while once run use 7.284000 ms
+start process
+start process2
+start process3
+process finished validCount 78
+post process while once run use 27.529000 ms
+tv @ (0 643 315 1105) 0.832885
+chair @ (1073 643 1506 1486) 0.728046
+bench @ (8 1709 603 1935) 0.355002
+chair @ (870 810 1093 1162) 0.303852
+person @ (1223 611 1534 1219) 0.264856
+person @ (1429 0 1830 1563) 0.203838
+handbag @ (1498 1522 1875 1875) 0.201307
+while once run use 63.613000 ms
+read and colerconvert while once run use 2.054000 ms
+letterbox while once run use 7.867000 ms
+start process
+start process2
+start process3
+process finished validCount 79
+post process while once run use 28.131000 ms
+tv @ (0 643 315 1097) 0.732767
+chair @ (1073 648 1506 1478) 0.667887
+chair @ (866 805 1101 1166) 0.384098
+bench @ (0 1701 595 1939) 0.342718
+person @ (1425 0 1814 1567) 0.265545
+while once run use 58.016000 ms
+read and colerconvert while once run use 2.204000 ms
+letterbox while once run use 8.066000 ms
+start process
+start process2
+start process3
+process finished validCount 67
+post process while once run use 28.348000 ms
+tv @ (0 639 311 1089) 0.790643
+chair @ (1069 639 1482 1498) 0.761736
+chair @ (866 814 1101 1158) 0.309481
+person @ (1239 611 1530 1227) 0.296123
+bench @ (0 1705 591 1939) 0.260380
+person @ (1425 0 1814 1587) 0.197262
+while once run use 60.099000 ms
+read and colerconvert while once run use 1.780000 ms
+letterbox while once run use 9.006000 ms
+start process
+start process2
+start process3
+process finished validCount 87
+post process while once run use 26.756000 ms
+tv @ (0 635 315 1113) 0.836257
+chair @ (1077 643 1482 1498) 0.797019
+chair @ (866 805 1101 1170) 0.593841
+bench @ (0 1701 591 1939) 0.471314
+person @ (1425 0 1810 1563) 0.336465
+handbag @ (1498 1539 1871 1871) 0.187190
+while once run use 59.097000 ms
+read and colerconvert while once run use 1.962000 ms
+letterbox while once run use 7.516000 ms
+start process
+start process2
+start process3
+process finished validCount 81
+post process while once run use 26.259000 ms
+tv @ (0 639 319 1109) 0.824853
+chair @ (1069 639 1458 1498) 0.789355
+chair @ (866 814 1101 1166) 0.469404
+person @ (1231 571 1530 1255) 0.434069
+bench @ (16 1709 599 1939) 0.321476
+person @ (1405 461 1790 1543) 0.293364
+chair @ (1814 469 2531 1547) 0.222843
+while once run use 64.896000 ms
+read and colerconvert while once run use 2.011000 ms
+letterbox while once run use 7.293000 ms
+start process
+start process2
+start process3
+process finished validCount 78
+post process while once run use 27.541000 ms
+tv @ (0 643 315 1105) 0.786198
+person @ (1105 611 1559 1486) 0.500577
+chair @ (870 810 1101 1162) 0.387351
+bench @ (8 1709 603 1939) 0.355371
+chair @ (1048 664 1243 1125) 0.295510
+person @ (1486 0 1777 1595) 0.240960
+while once run use 61.027000 ms
+read and colerconvert while once run use 1.750000 ms
+letterbox while once run use 7.795000 ms
+start process
+start process2
+start process3
+process finished validCount 86
+post process while once run use 26.304000 ms
+tv @ (0 639 311 1089) 0.798245
+chair @ (866 810 1101 1166) 0.566680
+chair @ (1081 639 1506 1482) 0.488603
+bench @ (16 1705 603 1939) 0.473972
+chair @ (1044 668 1223 1101) 0.364912
+chair @ (1769 473 2575 1534) 0.231657
+while once run use 56.629000 ms
+read and colerconvert while once run use 1.763000 ms
+letterbox while once run use 7.121000 ms
+start process
+start process2
+start process3
+process finished validCount 75
+post process while once run use 24.847000 ms
+tv @ (0 639 315 1109) 0.855600
+person @ (1117 550 1571 1510) 0.616157
+bench @ (4 1701 595 1935) 0.373051
+chair @ (1040 656 1312 1194) 0.369985
+chair @ (870 805 1105 1166) 0.301392
+chair @ (1664 660 2579 1887) 0.233726
+while once run use 56.982000 ms
+read and colerconvert while once run use 1.721000 ms
+letterbox while once run use 8.553000 ms
+start process
+start process2
+start process3
+process finished validCount 69
+post process while once run use 28.745000 ms
+tv @ (0 639 315 1113) 0.829099
+person @ (1077 579 1583 1522) 0.524025
+bench @ (0 1717 591 1939) 0.283356
+chair @ (870 810 1101 1162) 0.278816
+chair @ (1656 639 2587 1883) 0.261821
+while once run use 65.250000 ms
+read and colerconvert while once run use 1.759000 ms
+letterbox while once run use 7.109000 ms
+start process
+start process2
+start process3
+process finished validCount 66
+post process while once run use 27.510000 ms
+tv @ (0 639 315 1097) 0.813450
+chair @ (1057 639 1543 1482) 0.551047
+bench @ (0 1709 595 1939) 0.449641
+chair @ (870 810 1113 1166) 0.293887
+while once run use 60.749000 ms
+read and colerconvert while once run use 1.714000 ms
+letterbox while once run use 8.115000 ms
+start process
+start process2
+start process3
+process finished validCount 78
+post process while once run use 27.457000 ms
+tv @ (0 639 315 1105) 0.802046
+person @ (1097 579 1555 1518) 0.564183
+chair @ (870 805 1101 1166) 0.321384
+bench @ (0 1701 595 1939) 0.304630
+chair @ (1040 656 1377 1198) 0.291816
+handbag @ (1498 1526 1875 1875) 0.237416
+while once run use 62.282000 ms
+read and colerconvert while once run use 1.769000 ms
+letterbox while once run use 7.461000 ms
+start process
+start process2
+start process3
+process finished validCount 67
+post process while once run use 26.498000 ms
+tv @ (0 639 315 1097) 0.813450
+person @ (1101 562 1567 1522) 0.573792
+chair @ (870 805 1093 1158) 0.378993
+chair @ (1036 660 1344 1202) 0.312401
+bench @ (0 1701 595 1939) 0.306009
+while once run use 67.017000 ms
+read and colerconvert while once run use 1.715000 ms
+letterbox while once run use 7.498000 ms
+start process
+start process2
+start process3
+process finished validCount 74
+post process while once run use 24.978000 ms
+tv @ (0 643 315 1097) 0.794444
+chair @ (1065 639 1526 1494) 0.535413
+bench @ (0 1701 595 1935) 0.310240
+chair @ (866 805 1097 1158) 0.308743
+person @ (1474 0 1782 1551) 0.263261
+handbag @ (1506 1522 1875 1875) 0.156338
+while once run use 58.023000 ms
+read and colerconvert while once run use 2.029000 ms
+letterbox while once run use 7.509000 ms
+start process
+start process2
+start process3
+process finished validCount 69
+post process while once run use 28.515000 ms
+tv @ (0 639 315 1105) 0.824363
+person @ (1097 571 1591 1514) 0.541666
+bench @ (0 1701 595 1939) 0.322287
+chair @ (870 814 1109 1166) 0.294010
+person @ (1478 0 1773 1547) 0.240332
+while once run use 63.422000 ms
+read and colerconvert while once run use 1.947000 ms
+letterbox while once run use 7.865000 ms
+start process
+start process2
+start process3
+process finished validCount 80
+post process while once run use 27.542000 ms
+tv @ (0 639 315 1101) 0.802046
+person @ (1101 575 1591 1518) 0.502076
+bench @ (0 1713 591 1939) 0.485752
+chair @ (866 810 1105 1170) 0.458715
+person @ (1474 0 1794 1563) 0.244409
+handbag @ (1498 1530 1871 1867) 0.233664
+while once run use 63.238000 ms
+read and colerconvert while once run use 1.752000 ms
+letterbox while once run use 7.062000 ms
+start process
+start process2
+start process3
+process finished validCount 72
+post process while once run use 27.491000 ms
+tv @ (0 639 315 1105) 0.786842
+person @ (1081 575 1591 1518) 0.532255
+chair @ (870 805 1105 1166) 0.308927
+bench @ (0 1701 591 1935) 0.257345
+handbag @ (1498 1530 1875 1863) 0.185744
+while once run use 63.883000 ms
+read and colerconvert while once run use 1.765000 ms
+letterbox while once run use 7.200000 ms
+start process
+start process2
+start process3
+process finished validCount 73
+post process while once run use 26.480000 ms
+tv @ (0 639 315 1105) 0.748033
+person @ (1101 571 1583 1514) 0.544609
+chair @ (866 814 1105 1170) 0.443817
+bench @ (8 1705 603 1939) 0.432526
+while once run use 66.268000 ms
+read and colerconvert while once run use 1.724000 ms
+letterbox while once run use 7.337000 ms
+start process
+start process2
+start process3
+process finished validCount 68
+post process while once run use 27.125000 ms
+tv @ (0 643 311 1093) 0.809649
+person @ (1089 575 1579 1518) 0.544579
+bench @ (0 1705 595 1935) 0.366935
+chair @ (874 810 1101 1166) 0.259439
+chair @ (1664 639 2579 1883) 0.231611
+chair @ (1040 664 1385 1215) 0.224162
+handbag @ (1498 1526 1871 1863) 0.199493
+while once run use 62.633000 ms
+read and colerconvert while once run use 1.739000 ms
+letterbox while once run use 7.158000 ms
+start process
+start process2
+start process3
+process finished validCount 56
+post process while once run use 27.816000 ms
+tv @ (0 639 315 1101) 0.824853
+person @ (1097
