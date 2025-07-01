@@ -16,6 +16,9 @@
 #include <opencv2/videoio.hpp>
 #include <opencv2/opencv.hpp>
 
+int serial_init(const char *device, int baud_rate);Add commentMore actions
+void serial_deinit(int fd);
+
 static void dump_tensor_attr(rknn_tensor_attr *attr)
 {
   std::string shape_str = attr->n_dims < 1 ? "" : std::to_string(attr->dims[0]);
@@ -322,6 +325,13 @@ int main(int argc, char **argv)
   gettimeofday(&stop_time, NULL);
   printf("postprocess once run use %f ms\n", (__get_us(stop_time) - __get_us(start_time)) / 1000);
   
+  // Initialize serial portAdd commentMore actions
+  int serial_fd = serial_init("/dev/ttyACM0", 9600);
+  if(serial_fd < 0) {
+    fprintf(stderr, "Fehler beim Öffnen des seriellen Ports\n");
+    return -1;
+  }
+  
   ///  Loop 
   while (true){
     gettimeofday(&start_time, NULL);
@@ -377,8 +387,40 @@ int main(int argc, char **argv)
     gettimeofday(&stop_time, NULL);
     printf("while once run use %f ms\n", (__get_us(stop_time) - __get_us(start_time)) / 1000);
     
+    char serial_buffer[64];Add commentMore actions
+    for (int i = 0; i < detect_result_group.count; i++) 
+    {
+      detect_result_t *det_result = &(detect_result_group.results[i]);
+      int x1 = det_result->box.left;
+      int y1 = det_result->box.top;
+      int x2 = det_result->box.right;
+      int y2 = det_result->box.bottom;
+
+      // Zeichne die Bounding Box und füg den typischen Text hinzu:Add commentMore actions
+      rectangle(frame, cv::Point(x1, y1), cv::Point(x2, y2), cv::Scalar(256, 0, 0, 256), 3);
+    
+      // Berechne den Mittelpunkt
+      int x_center = (x1 + x2) / 2;
+      int y_center = (y1 + y2) / 2;
+    
+      // Format als kommaseparierter String: "x_center,y_center\n"
+      sprintf(serial_buffer, "%d,%d\n", x_center, y_center);
+    
+      // Sende über den seriellen Port
+      if (write(serial_fd, serial_buffer, strlen(serial_buffer)) < 0) {
+        perror("write failed");
+      }
+    
+      // Optional: Text-Anzeige auf dem Frame
+      char text[256];
+      sprintf(text, "%s %.1f%%", det_result->name, det_result->prop * 100);
+      putText(frame, text, cv::Point(x1, y1 + 12), cv::FONT_HERSHEY_SIMPLEX, 0.4, cv::Scalar(255, 255, 255));
+    }
+  }
 }
   deinitPostProcess();
+
+  serial_deinit(serial_fd);
 
   // release
   ret = rknn_destroy(ctx);
